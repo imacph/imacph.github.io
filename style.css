@@ -23,4 +23,10 @@ section {
 a {
   color: #007acc;
   text-decoration: none;
+
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #005b99;
 }
