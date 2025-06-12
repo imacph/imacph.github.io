@@ -1,0 +1,26 @@
+[
+  {
+    "image": "project-1-image.jpg",
+    "title": "AxisymmLinStab.jl",
+    "description": "This Julia package performs numerical linear stability analysis of rotating fluid flow in a spherical shell. It time-steps the linearized Navier–Stokes equations to evaluate the growth or decay of perturbations, identifying unstable modes and critical parameters. Designed for deployment on HPC clusters, the package supports scalable investigations in geophysical and astrophysical fluid dynamics.",
+    "link": "https://github.com/imacph/AxisymmLinStab.jl",
+    "linkClass": "project-link",
+    "linkText": "View Project"
+  },
+  {
+    "image": "project-2-image.jpg",
+    "title": "BatchTrace",
+    "description": "This project is a shell- and Python-based framework for automating large-scale simulation campaigns on SLURM-managed HPC clusters. It handles array job submission, routes output to long-term storage, and logs simulation parameters and metadata in an SQL database that indexes file locations. The system supports reproducible, traceable workflows across wide parameter sweeps, minimizing manual effort and simplifying downstream analysis.",
+    "link": "https://github.com/imacph/BatchTrace",
+    "linkClass": "project-link coming_soon",
+    "linkText": "View Project"
+  },
+  {
+    "image": "project-3-image.jpg",
+    "title": "spherical_flows",
+    "description": "Spherical Flows computes the time‑periodic linear response of a homogeneous, rapidly rotating Newtonian fluid confined to a spherical shell. It efficiently solves the associated boundary‑value problem using spectral methods (spherical harmonics), enabling analysis of time‑periodic fluid behavior under various boundary conditions—ideal for studying geophysical or astrophysical rotating fluid systems.",
+    "link": "https://github.com/imacph/spherical_flows",
+    "linkClass": "project-link",
+    "linkText": "View Project"
+  }
+]
