@@ -33,6 +33,11 @@ function renderProjects(projects) {
       info.classList.add('title_only');
     });
 
+    card.addEventListener('click',(event)=>{
+        event.stopPropagation();
+        info.classList.remove('title_only');
+    });
+
     closeBtn.addEventListener('click', (event) => {
       event.stopPropagation(); 
       info.classList.add('title_only');
