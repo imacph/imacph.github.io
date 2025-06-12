@@ -34,8 +34,8 @@ function renderProjects(projects) {
     });
 
     closeBtn.addEventListener('click', (event) => {
-      event.stopPropagation(); // Prevents bubbling to parent
-      info.classList.add('hidden');
+      event.stopPropagation(); 
+      info.classList.add('title_only');
     });
   });
 }
