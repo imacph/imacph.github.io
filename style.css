@@ -16,7 +16,7 @@ header {
 
 section {
   padding: 1rem 2rem;
-  max-width: 800px;
+  max-width: 30cm;
   margin: auto;
 }
 
@@ -33,7 +33,7 @@ a:hover {
 
 .project-card {
     width: 100%;
-    max-width: 400px;
+    width: 400px;
     height: 400px;
     margin: auto;
     border: 1px solid #ddd;
@@ -49,21 +49,23 @@ a:hover {
 }
 
 .project-image {
-    width: 50%;
+    width: 100%;
     height: auto;
-    margin: 10px;
+    margin: 0 auto;
 }
 
 
 .project-info {
   padding: 15px;
-  background-color: #fff;
-  transform: translateY(100%);
-  transition: transform 0.3s ease;
+  height: 350px;
+  background-color: rgba(216, 216, 216, 0.5);
+  transform: translateY(-18%);
+  transition: transform 0.3s ease, background-color 1s ease;
 }
 
 .project-card:hover .project-info {
-    transform: translateY(0);
+    transform: translateY(-100%);
+    background-color: rgb(216, 216, 216);
 }
 
 .project-title {
