@@ -121,13 +121,14 @@ a:hover {
   grid-template-columns: 1fr;
   max-width: 100%;
   margin: auto;
+  gap: 2rem;
 }
 
 @media (min-width: 1500px) {
   .projects-container {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    gap: 0px;
+    gap: 2rem;
     max-width: 1400px;
   }
 }
