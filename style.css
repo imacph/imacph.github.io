@@ -121,3 +121,18 @@ a:hover {
   margin: 0 auto;
 }
 
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.close-btn:hover {
+  color: red;
+}

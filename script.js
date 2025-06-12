@@ -12,6 +12,7 @@ function renderProjects(projects) {
     <div class="project-card">
       <img src="${project.image}" alt="Project Screenshot" class="project-image"/>
       <div class="project-info title_only">
+        <button class="close-btn">✖</button>
         <h3 class="project-title">${project.title}</h3>
         <p class="project-description">${project.description}</p>
         <a href="${project.link}" class="${project.linkClass}" target="_blank">${linkText}</a>
@@ -23,11 +24,18 @@ function renderProjects(projects) {
   const cards = container.querySelectorAll('.project-card');
   cards.forEach(card => {
     const info = card.querySelector('.project-info');
+    const closeBtn = card.querySelector('.close-btn');
+
     card.addEventListener('mouseenter', () => {
       info.classList.remove('title_only');
     });
     card.addEventListener('mouseleave', () => {
       info.classList.add('title_only');
+    });
+
+    closeBtn.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevents bubbling to parent
+      info.classList.add('hidden');
     });
   });
 }
