@@ -33,9 +33,21 @@ function renderProjects(projects) {
       info.classList.add('title_only');
     });
 
-    card.addEventListener('click',(event)=>{
+    
+
+    // Only enable click-to-expand on mobile devices
+    card.addEventListener('click', (event) => {
+      if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
         event.stopPropagation();
+        // Close any other open cards
+        cards.forEach(otherCard => {
+          if (otherCard !== card) {
+            const otherInfo = otherCard.querySelector('.project-info');
+            otherInfo.classList.add('title_only');
+          }
+        });
         info.classList.remove('title_only');
+      }
     });
 
     closeBtn.addEventListener('click', (event) => {
