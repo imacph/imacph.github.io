@@ -154,5 +154,8 @@ a:hover {
   .close-btn {
     display: block;
   }
+  .project-info {
+    transform: translateY(-70%);
+  }
 }
 
